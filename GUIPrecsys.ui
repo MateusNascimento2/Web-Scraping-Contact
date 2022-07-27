@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Precsys | Scrap</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>1024</width>
+        <height>780</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/newPrefix/background.jpg);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>441</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>601</width>
+         <height>71</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/newPrefix/logo-3.png); background: transparent;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent</string>
+       </property>
+       <property name="text">
+        <string>Credencias</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>151</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>221</y>
+         <width>47</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Senha</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="inputMask">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>asdasdasd</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>330</y>
+         <width>650</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:630px;
+max-width:630px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="text">
+        <string>Arquivo:</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>430</y>
+         <width>770</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #181c32;
+color:#FFF;
+padding:0px;
+min-width:770px;
+max-width:770px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;</string>
+       </property>
+       <property name="text">
+        <string>Entrar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>330</y>
+         <width>100</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #181c32;
+color:#FFF;
+padding:0px;
+min-width:100px;
+max-width:100px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;</string>
+       </property>
+       <property name="text">
+        <string>Carregar Arquivo</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 18px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Lemit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>120</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 18px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Assertiva</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>221</y>
+         <width>47</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Senha</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>180</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>151</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>250</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="inputMask">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>asdasdasd</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>120</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 18px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>ConfirmOnline</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>221</y>
+         <width>47</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Senha</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>180</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>151</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 14px;
+font-weight: 800;</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>250</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:200px;
+max-width:200px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="inputMask">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>asdasdasd</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>380</y>
+         <width>100</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #181c32;
+color:#FFF;
+padding:0px;
+min-width:100px;
+max-width:100px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;</string>
+       </property>
+       <property name="text">
+        <string>Local de Saída</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>380</y>
+         <width>650</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #f5f8fa;
+color:#5e6278;
+padding:0px;
+min-width:630px;
+max-width:630px;
+min-height:auto;
+max-height:auto;
+border-radius : 6px;
+font-family:Calibri;
+font-size: 12px;
+font-weight:800;
+padding:0px 10px 0px 10px;</string>
+       </property>
+       <property name="text">
+        <string>Arquivo:</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_3">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>500</y>
+         <width>421</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:black;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWebEngineView" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>0</y>
+          <width>421</width>
+          <height>211</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>540</y>
+         <width>220</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 18px;
+font-weight: 800;
+border-bottom:1px solid #111;
+</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>580</y>
+         <width>220</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>99</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:#111;
+min-height:auto;
+max-height:auto;
+font-family:Calibri;
+font-size: 18px;
+font-weight: 800;
+</string>
+       </property>
+       <property name="text">
+        <string>9999</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>760</y>
+         <width>1031</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">PyQt5.QtWebEngineWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="teste.qrc"/>
+  <include location="teste2qt.qrc"/>
+ </resources>
+ <connections/>
+</ui>
